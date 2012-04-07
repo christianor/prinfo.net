@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\My Dropbox\Repositories\Prinfo.Net\Testapplication\PrinfoTesting.nunit" total="0" errors="0" failures="0" not-run="1" inconclusive="0" ignored="0" skipped="0" invalid="1" date="2010-08-13" time="11:59:56">
+  <environment nunit-version="2.5.7.10213" clr-version="2.0.50727.4927" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\Users\ortiz.INT\Downloads\NUnit-2.5.7.10213\bin\net-2.0" machine-name="NRTMC009" user="ortiz" user-domain="INT" />
+  <culture-info current-culture="de-DE" current-uiculture="de-DE" />
+  <test-suite type="Project" name="D:\My Dropbox\Repositories\Prinfo.Net\Testapplication\PrinfoTesting.nunit" executed="True" result="Inconclusive" success="False" time="0.016" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="D:\My Dropbox\Repositories\Prinfo.Net\Testapplication\..\Build\Testapplication.exe" executed="True" result="Inconclusive" success="False" time="0.015" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="com" executed="True" result="Inconclusive" success="False" time="0.013" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="monitoring" executed="True" result="Inconclusive" success="False" time="0.013" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="prinfo" executed="True" result="Inconclusive" success="False" time="0.010" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="Program" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="com.monitoring.prinfo.Program.Main" executed="False" result="NotRunnable">
+                            <reason>
+                              <message><![CDATA[No arguments were provided]]></message>
+                            </reason>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

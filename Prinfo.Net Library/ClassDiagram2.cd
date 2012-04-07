@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="com.monitoring.prinfo.Ressource.res" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAASAIAggAAAAQAABEQEGAQACAUAAGAAAAQIAGII=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.Config">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="com.monitoring.prinfo.Config.Mail" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Source\Config\Config.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="com.monitoring.prinfo.Config.Version" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Source\Config\Config.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="com.monitoring.prinfo.Config.Notifications" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Source\Config\Config.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="com.monitoring.prinfo.Config.Reporting" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Source\Config\Config.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="com.monitoring.prinfo.Config.General" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Source\Config\Config.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAQAAAAAAAAIAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Source\Config\Config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.ArchivDatabase">
+    <Position X="1" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAgAAAAAAAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Source\Database\ArchivDatabase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.DatabaseObject">
+    <Position X="2" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAQAAAAAAAAAAAAAAAAAAACAAAAAAAQA=</HashCode>
+      <FileName>Source\Database\DatabaseObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.PrinterDatabase">
+    <Position X="3.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABIAAAAAAAAAQAAAACAAAAAAAAwAAAAAQAAAAAQAAA=</HashCode>
+      <FileName>Source\Database\PrinterDatabase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.SQLiteDatabaseFactory" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Database_Abstraction\SQLiteDatabaseFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="com.monitoring.prinfo.DirectoryController" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAABAAAAAAAAACAAAQAAEQIAAAAAA=</HashCode>
+      <FileName>Source\Filesystem\DirectoryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.GlobalizationHelper" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Source\Globalization\GlobalizationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.CSVImport" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAABAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Import\CSVImport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.PrinterImport" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAQAAIAAAAAAAAAAAgAAAACAAAAQAAAAAA=</HashCode>
+      <FileName>Source\Import\PrinterImport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.Logger" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Source\Log\Logger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.ExcelMailReportFormatter">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Mail\ExcelMailReportFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.Mailer" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Mail\Mailer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.MailReportFormatter">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACACAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Mail\MailReportFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.ReportMessage">
+    <Position X="6.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Source\Mail\ReportMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.TextMailReportFormatter">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Mail\TextMailReportFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.PrinterManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAEBABAAhAgAAFEAIAAiIDgABAAAIQUEAIgAABAAAA=</HashCode>
+      <FileName>Source\Manager\PrinterManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="com.monitoring.prinfo.Printer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEwCCABAAAAgAAAEAECQwAIgAABAAAAEAAgQAADAAAA=</HashCode>
+      <FileName>Source\Printer\Printer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="com.monitoring.prinfo.PrinterEventArgs">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Printer\PrinterEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.Supply" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAIAAAAAAAAAAAAgAgAAAAAAwAAAAAAA=</HashCode>
+      <FileName>Source\Printer\Supply.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.SupplyEventArgs" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Source\Printer\SupplyEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.ServiceManager">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAQAAgAAAAACAAAAAAQAAAAAAAAEAACAAQBAAAAAAA=</HashCode>
+      <FileName>Source\Service\ServiceManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.Tests.DatabaseTests" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABBAAAAAAAAAAAQAAAAAAKAAAAACAAAA=</HashCode>
+      <FileName>Source\Tests\DatabaseTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.Tests.PrinterManagerTests" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAABAAAAACAAgAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Tests\PrinterManagerTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.monitoring.prinfo.Tests.Tests" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAISAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Tests\Tests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="com.monitoring.prinfo.IDatabaseFactory">
+    <Position X="8" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Database_Abstraction\IDatabaseFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="com.monitoring.prinfo.Language" Collapsed="true">
+    <Position X="8" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Globalization\Language.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.monitoring.prinfo.LogType" Collapsed="true">
+    <Position X="9.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAQAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Log\LogType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

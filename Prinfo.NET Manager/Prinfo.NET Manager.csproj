@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A9D4D55-852E-4B60-A4BB-0BCB161269E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.monitoring.prinfo.manager</RootNamespace>
+    <AssemblyName>Prinfo.NET Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>printer.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Source\Forms\DetailNotificationSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Forms\DetailNotificationSettings.Designer.cs">
+      <DependentUpon>DetailNotificationSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Forms\LoadingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Forms\LoadingView.Designer.cs">
+      <DependentUpon>LoadingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Forms\AddPrinterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Forms\AddPrinterView.Designer.cs">
+      <DependentUpon>AddPrinterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Forms\PrinterDetailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Forms\PrinterDetailView.Designer.cs">
+      <DependentUpon>PrinterDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Forms\SearchNetworkPrinters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Forms\SearchNetworkPrinters.Designer.cs">
+      <DependentUpon>SearchNetworkPrinters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Helper\IpIterator.cs" />
+    <Compile Include="Source\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Forms\SettingsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Forms\SettingsView.Designer.cs">
+      <DependentUpon>SettingsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Forms\WebView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Forms\WebView.Designer.cs">
+      <DependentUpon>WebView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Source\Forms\DetailNotificationSettings.resx">
+      <DependentUpon>DetailNotificationSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Forms\AddPrinterView.resx">
+      <DependentUpon>AddPrinterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Forms\LoadingView.resx">
+      <DependentUpon>LoadingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Source\Forms\PrinterDetailView.resx">
+      <DependentUpon>PrinterDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Forms\SearchNetworkPrinters.resx">
+      <DependentUpon>SearchNetworkPrinters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Forms\SettingsView.resx">
+      <DependentUpon>SettingsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Forms\WebView.resx">
+      <DependentUpon>WebView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prinfo.Net Library\Prinfo.NET Library.csproj">
+      <Project>{04008A4A-361E-458E-889E-793DF5816798}</Project>
+      <Name>Prinfo.NET Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\ZedGraph.dll" />
+    <Content Include="printer.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

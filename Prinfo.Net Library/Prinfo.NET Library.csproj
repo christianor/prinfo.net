@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04008A4A-361E-458E-889E-793DF5816798}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.monitoring.prinfo</RootNamespace>
+    <AssemblyName>lib.prinfo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LOGGING_ON</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>..\Build\lib.prinfo.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.5.7.10213, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\Testapplication\Lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Data" />
+    <Reference Include="SharpSnmpLib, Version=4.0.10313.1, Culture=neutral, PublicKeyToken=d11e72d4f894d962">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\SharpSnmpLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpSnmpLib.Controls, Version=4.0.10313.1, Culture=neutral, PublicKeyToken=d11e72d4f894d962">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\SharpSnmpLib.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpSnmpLib.Mib, Version=4.0.10313.1, Culture=neutral, PublicKeyToken=d11e72d4f894d962">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\SharpSnmpLib.Mib.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpSnmpLib.Optional, Version=4.0.10313.1, Culture=neutral, PublicKeyToken=d11e72d4f894d962">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\SharpSnmpLib.Optional.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.65.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ressource\res.de-DE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>res.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Ressource\res.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Config\Config.cs" />
+    <Compile Include="Source\Database\ArchivDatabase.cs" />
+    <Compile Include="Source\Log\Logger.cs" />
+    <Compile Include="Source\Log\LogType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Database\DatabaseObject.cs" />
+    <Compile Include="Source\Database_Abstraction\IDatabaseFactory.cs" />
+    <Compile Include="Source\Database_Abstraction\SQLiteDatabaseFactory.cs" />
+    <Compile Include="Source\Database\PrinterDatabase.cs" />
+    <Compile Include="Source\Globalization\GlobalizationHelper.cs" />
+    <Compile Include="Source\Globalization\Language.cs" />
+    <Compile Include="Source\Filesystem\DirectoryController.cs" />
+    <Compile Include="Source\Import\CSVImport.cs" />
+    <Compile Include="Source\Import\PrinterImport.cs" />
+    <Compile Include="Source\Mail\ExcelMailReportFormatter.cs" />
+    <Compile Include="Source\Mail\MailReportFormatter.cs" />
+    <Compile Include="Source\Mail\Mailer.cs" />
+    <Compile Include="Source\Mail\ReportMessage.cs" />
+    <Compile Include="Source\Manager\PrinterManager.cs" />
+    <Compile Include="Source\Printer\Printer.cs" />
+    <Compile Include="Source\Printer\PrinterEventArgs.cs" />
+    <Compile Include="Source\Mail\TextMailReportFormatter.cs" />
+    <Compile Include="Source\Printer\Supply.cs" />
+    <Compile Include="Source\Printer\SupplyEventArgs.cs" />
+    <Compile Include="Source\Service\ServiceManager.cs" />
+    <Compile Include="Source\Tests\DatabaseTests.cs" />
+    <Compile Include="Source\Tests\PrinterManagerTests.cs" />
+    <Compile Include="Source\Tests\Tests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\nunit.framework.dll" />
+    <Content Include="Lib\SharpSnmpLib.Controls.dll" />
+    <Content Include="Lib\SharpSnmpLib.dll" />
+    <Content Include="Lib\SharpSnmpLib.Mib.dll" />
+    <Content Include="Lib\SharpSnmpLib.Optional.dll" />
+    <Content Include="Lib\sqlite3.dll" />
+    <Content Include="Lib\System.Data.SQLite.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ressource\res.de-DE.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>res.de-DE.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ressource\res.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>res.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties InternalTargetFrameworkVersion="3.5" />
+    </MonoDevelop>
+    <VisualStudio />
+  </ProjectExtensions>
+</Project>
